@@ -6,13 +6,12 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
     filename: 'build.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: "vue-netlify",
-      template: 'src/index.html'
+      template: './src/index.html'
     })
   ],
   module: {
